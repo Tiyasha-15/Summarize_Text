@@ -8,7 +8,7 @@ import re
 from gensim.models import Word2Vec
 import numpy as np
 
-
+nltk.download('punkt')
 os.environ['PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION'] = 'python'
 
 def summarize_text(content, summary_length=1):
